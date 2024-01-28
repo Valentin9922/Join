@@ -1,0 +1,634 @@
+
+
+.add-task-headline-close-section{
+    display:flex;
+    justify-content: space-between;
+}
+
+.close-task-icon{
+    cursor: pointer;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.add-task-aa {
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+#addTaskForm {
+    position: absolute;
+    top: 0;
+}
+
+.add-task-container {
+    border-radius: 20px;
+  top:130px;
+  left:300px;
+    background: #F6F7F8;
+    padding: 20px;
+}
+
+.add-task {
+    display: flex;
+    
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-task-left {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+
+align-items: flex-start;
+gap: 16px;
+}
+
+.add-task-right {
+    display: flex;
+width: 350px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+}
+
+.middle-line{
+    width: 1px;
+    margin: 0px 30px 0px 30px;
+    height:400px;
+    background-color: lightgray;
+}
+
+
+.title-input {
+    width: 300px;
+    padding: 12px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    background: #FFF;
+
+}
+
+input:focus {
+    border: 1px solid red !important;
+}
+
+.title-text {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.description-text-area {
+    width: 300px;
+    resize: none;
+    padding: 12px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    background: #FFF;
+    height: 100px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.assigned-to{
+    display: flex;
+    flex-direction: column;
+}
+
+.select-input {
+    width: 340px;
+    padding: 12px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+    height: 42px !important;
+}
+
+.due-date-input {
+    width: 300px;
+    padding: 12px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+    color: grey;
+}
+
+.progress-input{
+    width: 340px;
+    padding: 12px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+    height: 42px !important;
+}
+
+.due-date-text {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.category {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.prio-button {
+    margin-top: 10px;
+    display: flex;
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    display: flex;
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.prio-button:hover {
+    box-shadow: -1px 3px 6px 1px rgba(0, 0, 1, 0.3);
+}
+
+.prio-buttons-container {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.prio-button img {
+    width: 20px;
+    height: 30%;
+}
+
+.input-subtasks {
+    width:300px;
+    padding: 12px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Style, #D1D1D1);
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+
+.bottom-section {
+
+    background: #F6F7F8;
+    display: flex;
+    align-items: center;
+}
+
+.required {
+    display: flex;
+    width: 46%;
+}
+
+p {
+    margin: 0px;
+}
+
+.red {
+    color: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4px;
+}
+
+.button-clear {
+    border-radius: 10px;
+    border: 1.5px solid var(--version-2-main-color, #2A3647);
+    background: #F6F7F8;
+    font-family: 'Inter', sans-serif;
+    padding: 13px;
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2A3647;
+}
+
+.button-clear:hover {
+    border: 1.5px solid var(--version-2-main-color, #29ABE2);
+    color: #29ABE2;
+    transition: 0.25s ease-in-out;
+}
+
+.button-create-task {
+    border-radius: 10px;
+    border: 1.3px solid var(--version-2-main-color, #2A3647);
+    background: #2A3647;
+    font-family: 'Inter', sans-serif;
+    padding: 13px;
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.button-create-task:hover {
+    background-color: #29ABE2;
+    border: 1.3px solid var(--version-2-main-color, #29ABE2);
+}
+
+#hiddenButtons {
+    display: flex;
+    flex-direction: row !important;
+    color: black;
+    cursor: pointer;
+    max-width: 40% !important;
+}
+
+#displaySubtasks {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    min-width: 60%;
+    max-width: fit-content;
+}
+
+#editDeleteButtons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#editDeleteButtons div {
+    display: flex;
+    flex-direction: row !important;
+    color: black;
+    height: 9px;
+    cursor: pointer;
+}
+
+#editDeleteButtons div string {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.editDiv {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 60%
+}
+h1{
+    color: #000;
+
+font-family: Inter;
+font-size: 47px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 56.4px */
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .add-task-container{
+        left:270px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .add-task-container{
+        left:240px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .add-task {
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        margin-right: 30px;
+    }
+
+    .add-task-left {
+        padding-right: 0px;
+        width: 100%;
+        border-right: none;
+        align-items: center;
+    }
+
+    .description-section{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #description{
+        width: 100%;
+    }
+
+    .assigned-to{
+        width: 100%;
+    }
+
+    .assigned-to-section{
+        width:100%;
+    }
+
+    .select-input{
+        margin-top: 10px;
+        width: 100%;
+        height:42px !important;
+        margin-bottom: 10px;
+    }
+
+    .due-date{
+        width: 100%;
+    }
+
+    .due-date-input{
+        margin-top: 10px;
+        width: 100% !important;
+    }
+
+    .due-date-input-section{
+        width: 96%;
+    }
+
+    .progess{
+        display: flex;
+    }
+
+    .progress-section{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .progress-input{
+        width: 100%;
+    }
+
+    .add-task-right {
+        width: 100%;
+        padding-left: 0px;
+        align-items: unset;
+    }
+
+    .title-input-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-input{
+        margin-top: 10px;
+        width:100% !important;
+    }
+
+    .title{
+        width:100%;
+    }
+
+    .button-clear {
+        display: none;
+    }
+
+    .button-create-task {
+        padding: 11px;
+    }
+
+    .add-task-container{
+    
+    }
+
+    .prio-buttons-container{
+      width:unset;
+    }
+
+    #urgent-white{
+        object-fit: contain;
+    }
+
+    #low-white{
+        object-fit: contain;
+    }
+
+    #medium-black{
+        object-fit: contain;
+    }
+
+    #medium-white{
+        object-fit: contain;
+    }
+
+    .prio-button{
+        font-size: 1rem;
+        padding: 0px 10% 0px 10%;
+        height: 60px;
+    }
+
+    .bottom-section{
+        margin:0px;
+    }
+
+    .middle-line{
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .add-show-TaskBackground {
+        background-color: unset;
+    }
+
+    .addTaskCSS {
+        overflow: scroll;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .addTaskCSS::-webkit-scrollbar{
+        display: none;
+    }
+    .add-task {
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height: 100vh;
+        margin-right: 30px;
+    }
+
+    .input-subtasks {
+        margin-top: 10px;
+        padding: 12px 14px;
+    }
+
+    .due-date-input{
+        width: 91% !important;
+    }
+
+    .prio-button{
+        margin-top: 10px;
+        font-size: 1rem;
+        padding: 0px 10% 0px 10%;
+        height: 60px;
+    }
+
+    .add-task-left {
+        padding-right: 0px;
+        width: 100%;
+        border-right: none;
+    }
+
+    .add-task-right {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .button-clear {
+        display: none;
+    }
+
+    .button-create-task {
+        padding: 11px;
+    }
+
+    .add-task-container{
+      
+    }
+
+    .prio-buttons-container{
+    
+    }
+
+    .prio-button{
+        width: 100%;
+    }
+
+    .bottom-section{
+        margin:0px;
+        justify-content: space-between;
+    }
+
+    .middle-line{
+        display:none;
+    }
+
+    
+}
+
+
+@media only screen and (max-height: 700px) {
+    .add-task{
+        height:160vh !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .add-task {
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height: 100vh;
+        margin-right: 30px;
+    }
+
+    .due-date-input{
+        width: 91% !important;
+    }
+
+    .prio-button{
+        font-size: 1rem;
+        padding: 0px 3% 0px 3%;
+        height: 60px;
+    }
+
+    .add-task-left {
+        padding-right: 0px;
+        width: 100%;
+        border-right: none;
+    }
+
+    .add-task-right {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .button-clear {
+        display: none;
+    }
+
+    .button-create-task {
+        padding: 11px;
+    }
+
+    .add-task-container{
+      
+    }
+
+    .prio-buttons-container{
+    
+    }
+
+    .prio-button{
+        width: 100%;
+    }
+
+    .bottom-section{
+        margin:0px;
+    }
+
+    .middle-line{
+        display:none;
+    }
+
+    
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png">
+
+    <!-- Include CSS and Script Sheets -->
+    <script src="js/login.js"></script>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/storage.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/fonts_inter.css">
+</head>
+
+<body onload="initLogin();">
+    <div id="login-animation-background"  class="login-animation-section">
+       <img id="animation-logo-white" class="login-animation-white-logo capa-2" src="assets/img/Capa 1.png"> 
+       <img id="animation-logo-blue" class="login-animation-blue-logo capa-2" src="assets/img/Capa 2.png"> 
+    </div>
+    <div class="login-main">
+        <div class="login-header flex x-space-betw">
+            <img class="width-none"  src="assets/img/Capa 2.png" alt="Join Logo">
+            <div class="sign-up-section">
+                <span class="ft-general mr-35px fs-20px">Not a Join user?</span>
+                <button onclick="openSignUpSection()" class="btn-dark p-btn ft-general fs-16px fw-700">Sign up</button>
+            </div>
+        </div>
+
+        <!-- Login section -->
+        <div id="login" class="flex x-center">
+            <div class="log-in flex x-center y-center flex-column">
+                <div class="flex flex-column">
+                    <span class="ft-general fs-61px fw-700 mb-16px">Log in</span>
+                    <img src="assets/img/Vector 5.png" alt="blue line">
+                </div>
+
+                <div>
+                    <form onsubmit="login(); return false">
+                        <div class="login-input mb-32px flex x-space-betw y-center">
+                            <input class="ft-general fs-20px fw-400 input-icon-pos icon-email w-100" id="email"
+                                placeholder="Email" type="email" autocomplete="on" required>
+                        </div>
+                        <div class="login-input mb-32px flex x-space-betw y-center">
+                            <input class="ft-general fs-20px fw-400 input-icon-pos icon-password w-100" id="password"
+                                placeholder="Password" type="password" autocomplete="on" required>
+                        </div>
+                        <div class="flex mb-32px ml-39px gap-8px">
+                            <input type="checkbox" autocomplete="off">
+                            <span class="ft-general fs-16px fw-400">Remember me</span>
+                        </div>
+                        <div class="login-section flex x-center gap-35px">
+                            <button id="login-btn" class="btn-dark ft-general fs-21px fw-700" type="submit">Log in</button>
+                            <button onclick="loginAsGuest()" class="btn-light ft-general fs-21px fw-700" type="button">Guest Log
+                                in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign up section -->
+        <div id="sign-up" class="sign-up flex x-center d-none">
+            <div class="sign-up log-in flex x-center y-center flex-column">
+                <img onclick="closeSignUpSection()" class="arrow-back" src="assets/img/arrow-left-line.png" alt="back">
+                <div class="flex flex-column">
+                    <span class="ft-general fs-61px fw-700 mb-16px">Sign up</span>
+                    <img src="assets/img/Vector 5.png" alt="blue line">
+                </div>
+
+                <div>
+                    <form onsubmit="addNewUser(); return false">
+                        <div class="login-input mb-32px flex x-space-betw y-center">
+                            <input class="ft-general fs-20px fw-400 input-icon-pos input-name w-100" placeholder="Name"
+                                id="new-name" autocomplete="on" required>
+                        </div>
+                        <div class="login-input mb-32px flex x-space-betw y-center">
+                            <input class="ft-general fs-20px fw-400 input-icon-pos icon-email w-100" id="new-email"
+                                placeholder="Email" type="email" autocomplete="on" required>
+                        </div>
+                        <div class="login-input mb-32px flex x-space-betw y-center">
+                            <input class="ft-general fs-20px fw-400 input-icon-pos icon-password w-100"
+                                id="new-password" placeholder="Password" type="password" autocomplete="on" required>
+                        </div>
+                        <div class="login-input mb-32px flex x-space-betw y-center">
+                            <input class="ft-general fs-20px fw-400 input-icon-pos icon-password w-100"
+                                id="compare-password" placeholder="Confirm password" type="password" autocomplete="on"
+                                required>
+                        </div>
+                        <div class="flex mb-32px ml-39px gap-8px">
+                            <input type="checkbox">
+                            <span class="ft-general fs-16px fw-400">I accept the <span class="change-col-bl">Privacy
+                                    policy</span></span>
+                        </div>
+                        <div class="flex x-center gap-35px">
+                            <button class="btn-dark ft-general fs-21px fw-700">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="sign-up-resp" class="sign-up-section-responsive">
+            <span class="ft-general mr-35px fs-20px">Not a Join user?</span>
+            <button id="sign-up-resp" onclick="openSignUpSection()" class="btn-dark p-btn ft-general fs-16px fw-700">Sign up</button>
+        </div>
+
+        <footer class="privacy-policy flex x-center fs-16px gap-16px">
+            <a class="p-8px" target="_blank" href="privacy_policy.html">Privacy Policy</a>
+            <a class="p-8px" target="_blank" href="legal_notice.html">Legal Notice</a>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
+<!--<form onsubmit="createTask(); return false" id="addTaskForm">
+            
+            <div class="add-task-container">
+                <div class="add-task-headline-close-section"> 
+                    <h2 style="font-size: 2rem;">Add Task</h2>
+                        <img class="close-task-icon" src="assets/img/close.svg" onclick="closeTaskForm()">
+                </div>
+               
+                <div class="add-task">
+                    <div class="add-task-left">
+                        <div class="title">
+                            <div class="title-text">Title <p class="red">*</p>
+                            </div>
+                            <input id="enterTitle" placeholder="Enter a title" type="text" class="title-input input-focus"
+                                required>
+                        </div>
+                        <div class="description ">
+                            <span>Description</span>
+                            <textarea id="description" placeholder="Enter a Description"
+                                class="description-text-area"></textarea>
+                        </div>
+                        <div class="assigned-to">
+                            <span>Assigned to</span>
+                            <select id="contacts" onchange="saveContact(this.value)" name="Select contacts to assign"
+                                class="select-input">
+                                <option value="">Select contacts to assign</option>
+                            </select>
+                            <div id="displaySelectedContacts"></div>
+                        </div>
+    
+                    </div>
+                    <div class="middle-line">
+    
+                    </div>
+                    <div class="add-task-right">
+                        <div class="due-date">
+                            <div class="due-date-text">Due date<p class="red">*</p>
+                            </div>
+                            <input id="date" type="date" class="due-date-input" required>
+                        </div>
+                        <div class="prioritisation">
+                            <span>Prio</span>
+                            <div class="prio-buttons-container">
+                                <button onclick="urgent(), activeButton()" id="urgent" type="button" class="prio-button active-urgent">Urgent <img
+                                        src="assets/img/add-task-img/prio-urgent.png"></button>
+                                <button onclick="medium(), activeButton()" id="medium" type="button" class="prio-button active-medium">Medium <img
+                                        src="assets/img/add-task-img/prio-medium.png"></button>
+                                <button onclick="low(), activeButton()" id="low" type="button" class="prio-button" active-low>Low <img
+                                        src="assets/img/add-task-img/prio-low.png"></button>
+                            </div>
+                        </div>
+                        <div class="category-section ">
+                            <div class="category">Category <p class="red">*</div>
+                            <select id="category" name="Select contacts to assign" class="select-input" required>
+                                <option value="">Select Category</option>
+                                <option value="technical_task">Technical Task</option>
+                                <option value="user_story">User Story</option>
+                            </select>
+                        </div>
+    
+                        <div class="subtask">
+                            <span>Subtasks</span>
+                            <input id="inputNewSubtask" oninput="enableInputButtons('1')" class="input-subtasks"
+                                placeholder="Add new subtask">
+                            <div id="hiddenButtons" style="display:none;">
+                                <string onclick="submitSubtask('1')">&#10003</string>
+                                <string onclick="cleanInputField('1')">&#x1F5D1</string>
+                            </div>
+                            <div id="displaySubtasks">
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                <div class="bottom-section">
+                    <div class="required">
+                        <p class="red">*</p>
+                        <p>this field is required</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-clear" type="button" onclick="resetAddTaskBoard()"> Clear <img
+                                src="/assets/img/add-task-img/clear-x.png"></button>
+                        <button class="button-create-task" type="submit"> Create Task <img
+                                src="/assets/img/add-task-img/create-task-check.png"></button>
+                    </div>
+                </div>
+            </div>
+            
+        </form>-->

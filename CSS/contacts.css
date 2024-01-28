@@ -1,0 +1,393 @@
+.main-div-contacts {
+    position: absolute;
+    top: 96px;
+    left: 220px;
+    bottom: 0;  
+    right: 0;
+}
+
+.sub-div-contacts { height: 100%; }
+
+.contacts-div {
+    overflow-y: scroll;
+    min-width: 404px;
+    overflow-x: hidden;
+    padding: 22.5px 52px;
+    background-color: #FFFFFF;
+}
+
+.add-contacts-btn {
+    width: 352px;
+    cursor: pointer;
+    padding: 12px 0;
+}
+
+.team-slogan {
+    padding: 48px;
+    padding-top: 64px;
+    flex-shrink: 0;
+}
+
+.contacts-overlay { 
+    white-space: nowrap; 
+    height: 592px;
+}
+
+#contact-book > div { min-width: 304px; }
+
+#overlay-contacts div.bg-dark-blue,
+#edit-contacts div.bg-dark-blue {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 66px 48px;
+    color: white;
+}
+
+.join-logo-small {
+    width: 55px;
+    height: 66px;
+}
+
+.overlay-forms {
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.overlay-forms > div { padding: 32px; }
+
+.overlay-forms > div.w-100 { padding-left: 0; }
+
+.overlay-forms > div > form div.gap-35px { padding: 48px 0; }
+
+.icon-name { background-image: url(/assets/img/person.png); }
+
+.icon-phone { background-image: url(/assets/img/call.png); }
+
+.contact,
+#contact-book > tr > td { 
+    width: 352px;
+    padding: 17px 24px;
+    font-weight: 700;
+}
+
+.contactHover:hover { background-color: rgba(0, 0, 0, 0.1); }
+
+#contact-book > tr > div { border-radius: 10px; }
+/* #contact-book > tr > div:hover { background-color: rgba(0, 0, 0, 0.1); } */
+#contact-book > tr > div { cursor: pointer; }
+#contact-book > tr > td > span { margin-left: 12px; }
+a { color: #007CEE; }
+
+.separator {
+   padding: 8px 0;
+   border-bottom: 1px solid #D1D1D1;
+   margin-bottom: 8px;
+}
+
+.marginLetter {
+    margin-bottom: -45px;
+}
+
+.acronym {
+   border-radius: 50%;
+   width: 36px;
+   height: 36px;
+   color: white;
+   border: 3px solid white;
+}
+
+.mr-54px { margin-right: 54px; }
+
+.edit-contact > div > div > div { cursor: pointer; }
+
+.edit-contact > div.mr-54px,
+#edit-Overlay-Menu-Avatar > div
+{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.margin-bottom {
+    margin-bottom: 20px !important;
+}
+
+.add-contacts-btn-resp{
+    display: none !important;
+}
+
+/* input[type=number] {
+  
+} */
+
+.contacts-name-color-1{
+  background-color: #FF7A00;
+}.contacts-name-color-2{
+  background-color: #FF5EB3;
+}.contacts-name-color-3{
+  background-color: #6E52FF;
+}.contacts-name-color-4{
+  background-color: #9327FF;
+}.contacts-name-color-5{
+  background-color: #00BEE8;
+}.contacts-name-color-6{
+  background-color: #1FD7C1;
+}.contacts-name-color-7{
+  background-color: #FF745E;
+}.contacts-name-color-8{
+  background-color: #FFA35E;
+}.contacts-name-color-9{
+  background-color: #FC71FF;
+}.contacts-name-color-10{
+  background-color: #FFC701;
+}.contacts-name-color-11{
+  background-color: #0038FF;
+}.contacts-name-color-12{
+  background-color: #FFE62B;
+}.contacts-name-color-13{
+  background-color: #FF4646;
+}.contacts-name-color-14{
+  background-color: #FFBB2B;
+}.contacts-name-color-15{
+  background-color: #C3FF2B;
+}
+
+.create-contact-icon-resp{
+  display: none;
+}
+
+
+.close-cross-white{
+  display: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+.team-slogan-child{
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-bl-line{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+  .team-slogan-child span{
+    font-size: 1.5rem !important;
+  }
+
+  .fs-61px{
+    text-align: start !important;
+    font-size: 2rem !important;
+  }
+  
+  .fs-27px{
+    font-size: 1.2rem !important;
+  }
+
+  .login-input{
+    width:300px !important;
+  }
+
+  .btn-create-contact {
+    font-size: 1rem !important;
+    width:170px;
+    padding:8px 0px 8px 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 15px;
+  }
+
+  .btn-contact-cancel{
+    font-size: 1rem !important;
+    width:130px;
+    padding:8px 0px 8px 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 15px;
+  }
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .team-slogan-child span{
+      display: none;
+    }
+
+    .login-input{
+      width:250px !important;
+    }
+
+    .create-contacts-btn-section{
+      gap: 15px !important;
+    }
+
+    .btn-create-contact{
+      display: none;
+      width: 130px !important;
+    }
+
+    .btn-create-contact img{
+      display: none;
+      width: 130px !important;
+    }
+
+    }
+
+@media only screen and (max-width: 850px) {
+
+  .main-div-contacts{
+    left:0;
+    right:unset;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height:120vh;
+  }
+
+  .sub-div-contacts{
+    width:100%;
+  }
+
+  .contacts-div{
+    padding: 0px;
+  }
+
+  .team-slogan{
+    display: none;
+  }
+
+  .add-contacts-btn{
+    display: none !important;;
+  }
+
+  .add-contacts-btn-resp{
+    display: flex !important;
+    width:60px;
+    height:60px;
+    bottom:100px;
+    border-radius: 100px !important;
+    position: fixed;
+    right:20px;
+  }
+
+  .contacts-overlay{
+    flex-direction:column;
+  }
+  
+  .create-contact-icon-resp{
+    display: flex;
+  position: relative;
+  top:80px;
+  left: 80px;
+  width:100px;
+}
+
+.icon-resp{
+  display: none !important;
+}
+
+.join-logo-small{
+  display: none;
+}
+
+.close-cross{
+  padding:unset !important;
+  margin-bottom: unset !important;
+  display: none !important; 
+}
+
+.overlay-forms > div{
+  padding: unset !important;
+}
+
+.fs-61px{
+  text-align: start !important;
+  font-size: 2rem !important;
+}
+
+.fs-27px{
+  font-size: 1.2rem !important;
+}
+
+#overlay-contacts div.bg-dark-blue{
+  position: relative;
+  padding:  40px 48px !important;
+}
+
+.close-cross-white{
+  display:flex !important;
+  position: relative;
+  top:-20px;
+  right: -30px;
+}
+
+.bg-dark-blue{
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0px !important;
+}
+
+.login-input{
+  width:280px !important;
+  margin-bottom: 10px !important;
+  padding: 8px 15px !important;
+}
+
+input{
+  font-size: 0.8rem !important;
+  height:20px !important;
+}
+
+.contacts-overlay{
+  height: 100%;
+}
+
+#newContactForm{
+  margin-top: 50px;
+}
+
+.btn-light{
+  display: none !important; 
+}
+
+.btn-create-contact {
+  font-size: 1rem !important;
+  width:170px;
+  padding:8px 0px 8px 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin-bottom:60px;
+  margin-top: 15px;
+}
+
+.overlay-forms{
+  border-radius: 0;
+}
+
+.input-section{
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius:30px ;
+}
+
+.create-contacts-btn-section{
+  display: flex !important;
+  flex-direction: column !important;
+  padding: unset !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+}
+
